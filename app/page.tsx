@@ -19,18 +19,24 @@ export default function Home() {
     </nav>
 
     <section className="hero shell" id="top">
-      <div className="heroCopy">
-        <p className="eyebrow"><span /> Medical imaging · Reliable AI</p>
-        <h1>Loretta<br />Kong</h1>
-        <p className="intro">I am a Statistics and Data Science student at Vanderbilt University, building reliable machine-learning methods for medical imaging, scientific computing, and uncertain data.</p>
-        <div className="heroActions">
-          <a className="button primary" href="#research">Explore my work</a>
-          <a className="button quiet" href="/Lingfei-Kong-CV.pdf" target="_blank">View CV ↗</a>
-        </div>
-      </div>
-      <div className="portraitWrap">
+      <aside className="profileCard">
         <div className="portraitFrame"><img src="/lingfei-kong-portrait.jpg" alt="Portrait of Lingfei Kong" /></div>
-        <p className="portraitNote">● Vanderbilt University · Nashville, TN</p>
+        <h1>Lingfei Kong</h1>
+        <p className="profileRole">B.S. Statistics · Vanderbilt University</p>
+        <div className="profileLinks">
+          <span>● Nashville, Tennessee</span>
+          <a href="mailto:lingfei.kong@vanderbilt.edu">✉ Vanderbilt Email</a>
+          <a href="mailto:lingfeikong0930@gmail.com">✉ Personal Email</a>
+          <a href="https://github.com/Lorettakong" target="_blank" rel="noreferrer">↗ GitHub</a>
+          <a href="/Lingfei-Kong-CV.pdf" target="_blank">↗ Curriculum Vitae</a>
+        </div>
+      </aside>
+      <div className="heroCopy">
+        <p className="eyebrow"><span /> About me</p>
+        <h2>Hello, I’m Lingfei.</h2>
+        <p className="intro">I am a Statistics major and Data Science minor at Vanderbilt University. My research brings together scientific machine learning, Bayesian inference, physics-informed learning, uncertainty quantification, and medical AI.</p>
+        <p className="intro secondaryIntro">I am especially interested in reliable models for sparse longitudinal medical data, machine learning for PDEs, and understanding how large language models represent and update knowledge.</p>
+        <div className="heroActions"><a className="button primary" href="#publications">Selected publications</a><a className="button quiet" href="#research">Research projects</a></div>
       </div>
     </section>
 
