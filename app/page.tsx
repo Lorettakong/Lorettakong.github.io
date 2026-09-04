@@ -1,7 +1,8 @@
 const work = [
-  { index: '01', title: 'Reliability Evaluation of Uncertainty Calibration and Gompertz-Inspired Regularization', description: 'A reliability-centered benchmark for sparse longitudinal CT lesion prediction, spanning uncertainty calibration, interval sharpness, subgroup behavior, and trajectory regularization.', tags: ['Medical imaging', 'Uncertainty', 'Longitudinal CT'], href: 'https://github.com/Lorettakong/deeplesion-dlt-reliability' },
-  { index: '02', title: 'Uncertainty-Aware Mechanistic Correction for Lung Nodule Trajectories', description: 'A Bayesian Gompertz-guided framework that learns population-level mechanistic deviation and uses conformal calibration for more reliable prediction intervals.', tags: ['Bayesian modeling', 'Conformal prediction', 'Lung nodules'], href: 'https://github.com/Lorettakong/ct-nodule-mechanistic-correction' },
-  { index: '03', title: 'Diagonal Cache', description: 'Structural interventions on AlphaEdit’s edit-batch covariance cache, studying how cache geometry influences knowledge editing in large language models.', tags: ['Knowledge editing', 'LLMs', 'Representation geometry'], href: 'https://github.com/Lorettakong/diagonal-cache' },
+  { index: '01', title: 'Building a Reliability-Centered Benchmark for Longitudinal CT Lesion Prediction', description: 'Constructed a five-visit DeepLesion-DLT benchmark with patient- and scan-level quality control and leakage-free splits to study accuracy, uncertainty calibration, and mechanistic consistency.', tags: ['Longitudinal CT', 'Uncertainty quantification', 'Reliability evaluation'], href: 'https://github.com/Lorettakong/deeplesion-dlt-reliability' },
+  { index: '02', title: 'Correcting Systematic Mechanistic Bias in Sparse Longitudinal CT Prediction', description: 'Developed a Bayesian Gompertz framework that learns systematic deviations from an interpretable mechanistic backbone and applies conformal calibration to improve prediction reliability.', tags: ['Bayesian inference', 'Mechanistic modeling', 'Conformal calibration'], href: 'https://github.com/Lorettakong/ct-nodule-mechanistic-correction' },
+  { index: '03', title: 'Mechanism-Oriented Analysis of LLM Knowledge Editing', description: 'Studied how layer choice, covariance-cache structure, and projection mechanisms affect editing success, generalization, and locality in LLaMA-2-7B.', tags: ['Knowledge editing', 'Cache mechanisms', 'Generalization & locality'], href: 'https://github.com/Lorettakong/diagonal-cache' },
+  { index: '04', title: 'Optimization Diagnostics for Physics-Informed Neural Networks', description: 'Investigating gradient magnitude, convergence rates, and gradient conflict across PDE, boundary, and initial-condition objectives on scientific computing benchmarks.', tags: ['Scientific machine learning', 'PINNs', 'PDE optimization'] },
 ];
 
 const publications = [
@@ -50,12 +51,12 @@ export default function Home() {
 
     <section className="research" id="research"><div className="shell">
       <div className="sectionHead"><div><p className="sectionLabel">Selected research</p><h2>Current work</h2></div><p>Open-source code and manuscript-facing materials.</p></div>
-      <div className="workList">{work.map((item) =>
-        <a className="workItem" href={item.href} target="_blank" rel="noreferrer" key={item.index}>
-          <span className="workIndex">{item.index}</span>
-          <div><h3>{item.title}</h3><p>{item.description}</p><div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
-          <span className="workArrow" aria-hidden="true">↗</span>
-        </a>)}</div>
+      <div className="workList">{work.map((item) => {
+        const content = <><span className="workIndex">{item.index}</span><div><h3>{item.title}</h3><p>{item.description}</p><div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>{item.href && <span className="workArrow" aria-hidden="true">↗</span>}</>;
+        return item.href
+          ? <a className="workItem" href={item.href} target="_blank" rel="noreferrer" key={item.index}>{content}</a>
+          : <article className="workItem" key={item.index}>{content}</article>;
+      })}</div>
     </div></section>
 
     <section className="publications shell" id="publications">
