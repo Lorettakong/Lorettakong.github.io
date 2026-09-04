@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       <div className="portraitWrap">
-        <div className="portraitFrame"><img src="/loretta-avatar.jpg" alt="Portrait of Loretta Kong" /></div>
+        <div className="portraitFrame"><img src="/lingfei-kong-portrait.jpg" alt="Portrait of Lingfei Kong" /></div>
         <p className="portraitNote">● Vanderbilt University · Nashville, TN</p>
       </div>
     </section>
