@@ -1,4 +1,4 @@
-# Loretta Kong — personal website
+# Lingfei Kong — personal website
 
 Source for [lorettakong.github.io](https://lorettakong.github.io).
 

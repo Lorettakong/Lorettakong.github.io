@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Loretta Kong — Medical Imaging & Reliable AI',
+  title: 'Lingfei Kong — Medical Imaging & Reliable AI',
   description: 'Research in medical imaging, uncertainty quantification, mechanistic modeling, and reliable machine learning.',
 };
 

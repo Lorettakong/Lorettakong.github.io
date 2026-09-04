@@ -14,7 +14,7 @@ const publications = [
 export default function Home() {
   return <main>
     <nav className="nav shell" aria-label="Primary navigation">
-      <a className="wordmark" href="#top" aria-label="Loretta Kong, home">LK<span>.</span></a>
+      <a className="wordmark" href="#top" aria-label="Lingfei Kong, home">LK<span>.</span></a>
       <div className="navLinks"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="/Lingfei-Kong-CV.pdf" target="_blank">CV</a></div>
     </nav>
 
@@ -75,7 +75,7 @@ export default function Home() {
 
     <footer id="contact">
       <div className="shell footerInner"><div><p className="sectionLabel">Let’s connect</p><h2>Interested in my work?</h2><div className="emails"><a href="mailto:lingfei.kong@vanderbilt.edu">lingfei.kong@vanderbilt.edu</a><a href="mailto:lingfeikong0930@gmail.com">lingfeikong0930@gmail.com</a></div></div><a className="button light" href="https://github.com/Lorettakong" target="_blank" rel="noreferrer">Find me on GitHub ↗</a></div>
-      <div className="shell footerBase"><span>© {new Date().getFullYear()} Loretta Kong</span><span>Research · Build · Learn</span></div>
+      <div className="shell footerBase"><span>© {new Date().getFullYear()} Lingfei Kong</span><span>Research · Build · Learn</span></div>
     </footer>
   </main>;
 }
