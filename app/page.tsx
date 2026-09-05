@@ -45,7 +45,7 @@ export default function Home() {
       <p className="sectionLabel">About</p>
       <div className="aboutText">
         <h2>Questions worth pursuing sit between disciplines.</h2>
-        <p>My work brings together machine learning, medical imaging, uncertainty quantification, and mechanistic modeling. I am especially interested in methods that remain interpretable and dependable when observations are limited. I also explore knowledge editing for large language models and machine learning for PDEs.</p>
+        <p>My research brings together scientific machine learning, Bayesian inference, physics-informed learning, uncertainty quantification, and medical AI. I am particularly interested in developing reliable learning methods that integrate data-driven models with mechanistic structure, especially for biomedical and scientific applications.</p>
       </div>
     </section>
 
