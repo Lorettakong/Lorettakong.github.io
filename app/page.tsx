@@ -9,7 +9,7 @@ const publications = [
   { year: '2026', status: 'Under review', title: 'Uncertainty-Aware Mechanistic Misspecification Correction for Sparse Longitudinal CT-Derived Lung Nodule Trajectory Prediction', venue: 'Biomedical Signal Processing and Control', href: 'https://github.com/Lorettakong/ct-nodule-mechanistic-correction' },
   { year: '2026', status: 'Preprint', title: 'Uncertainty-aware prediction of lung tumor growth from sparse longitudinal CT data via Bayesian physics-informed neural networks', venue: 'arXiv:2605.13560', href: 'https://arxiv.org/abs/2605.13560' },
   { year: '2024', status: 'Published', title: 'Mathematical Model for COVID-19', venue: 'Highlights in Science, Engineering and Technology, 98', href: 'https://doi.org/10.54097/b640hq26' },
-  { year: '2024', status: 'Published', title: 'Analytical Examination of GINI Index and Lorenz Curves: A Scientific Inquiry', venue: 'Proceedings of ICEESR 2024', href: 'https://doi.org/10.25236/iceesr.2024.022' },
+  { year: '2024', status: 'Published', title: 'Analytical Examination of GINI Index and Lorenz Curves: A Scientific Inquiry', venue: '2024 5th International Conference on Economics, Education and Social Research (ICEESR 2024)', href: 'https://www.webofproceedings.org/proceedings_series/article/artId/23097.html' },
 ];
 
 export default function Home() {
