@@ -6,6 +6,7 @@ const work = [
 ];
 
 const publications = [
+  { year: '2026', status: 'Preprint · CMPB under review', title: 'Reliability-Centered Evaluation of Sparse Longitudinal CT Lesion-Size Forecasting with Conformal Interval Calibration and Gompertz-Inspired Regularization', venue: 'Computer Methods and Programs in Biomedicine · arXiv:2609.21197', href: 'https://arxiv.org/abs/2609.21197' },
   { year: '2026', status: 'Preprint · Under review', title: 'Uncertainty-Aware Mechanistic Misspecification Correction for Sparse Longitudinal CT-Derived Lung Nodule Trajectory Prediction', venue: 'Biomedical Signal Processing and Control · SSRN', href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7227880' },
   { year: '2026', status: 'Preprint', title: 'Uncertainty-aware prediction of lung tumor growth from sparse longitudinal CT data via Bayesian physics-informed neural networks', venue: 'arXiv:2605.13560', href: 'https://arxiv.org/abs/2605.13560' },
   { year: '2024', status: 'Published', title: 'Mathematical Model for COVID-19', venue: 'Highlights in Science, Engineering and Technology, 98', href: 'https://doi.org/10.54097/b640hq26' },
